@@ -1,0 +1,30 @@
+.container_search_search{
+    display: flex;
+    width: 50%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_search {
+    width: 70%;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid #bab5b5;
+    color: black;
+}
+
+.container_search_search svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.container_search_search svg:hover{
+    cursor: pointer;
+    background-color: #bab5b58a;
+    border-radius: 4px;
+}

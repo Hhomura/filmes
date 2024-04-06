@@ -1,0 +1,29 @@
+#root{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container_main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
