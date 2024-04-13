@@ -5,7 +5,6 @@ export default (() =>{
     
     return(
         <div className="container_main">
-            <SIdebar/>
             <Outlet/>
         </div>
     )

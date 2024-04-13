@@ -3,6 +3,7 @@ import './home.css'
 import { useEffect, useState } from 'react'
 import CardMovie from './CardMovie/CardMovie'
 import data from './API/Api'
+import logo from '../assets/Logo.png'
 
 export default (() => {
 
@@ -36,14 +37,19 @@ export default (() => {
 
     return (
         <div className='container_home'>
+
             <div className='search_container'>
+                <img className='logo' src={logo} alt="" />
+                <p className='frase'>Os filmes mais populares do ano que você nasceu</p>
                 <Search setNome={setNome} buttonSearch={buscarNome} />
             </div>
+
             <div className='container_list'>
                 {listaFiltro.map((filme) => (
-                    <CardMovie key={filme.id} nome={filme.title} score={filme.vote_average} ano={filme.release_date} url={filme.poster_path} />
+                    <CardMovie key={filme.id} nome={filme.title} popularidade={filme.popularity} ano={filme.release_date} url={filme.poster_path} />
                 ))}
             </div>
+
         </div>
     )
 })
